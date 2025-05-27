@@ -14,13 +14,18 @@
   • <a href="#️-contributing">contribuindo</a>
 </p>
 
-**🌎 README disponível em outros idiomas:  [🇬🇧](../README.md)**
+**🌎 README disponível em outros idiomas: [🇬🇧](../README.md)**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Bem-vindos (as) ao meu blog pessoal. Neste pedaço da internet estarei utilizando para compartilhar meus conhecimentos relevantes sobre a extensa área de tecnologia.
+
+Todo esse projeto estará sob a licença Creative Commons e será aberto para compartilhar, modificar e distribuir gratuitamente, desde que os devidos créditos sejam atribuídos.
+
+Sinta-se livre para criar uma PR com correções nos posts ou modificações no MkDocs, desde que sejam triviais e não extensas.
 
 <br/>
 
 ##
+
 - [🌟 features](#-features)
 - [📲 instalação](#-instalação)
 - [🐍 uso](#-Uso)
@@ -28,77 +33,80 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - [👨🏻‍💻 autor](#-Autor)
 - [👮🏻 licença](#-Licença)
 
-
 <br/>
-
 
 ## 🌟 features
 
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
-
+- Lorem Ipsum
+- Lorem Ipsum
+- Lorem Ipsum
+- Lorem Ipsum
+- Lorem Ipsum
+- Lorem Ipsum
 
 <br/>
-
 
 ## 📲 instalação
 
 ```cmd
 git clone https://github.com/Anti-Coding-Coding-Club/template.git
 ```
->📣 **clone o projeto**
+
+> 📣 **clone o projeto**
 
 <br/>
 
 ```cmd
 python -m venv env
 ```
->📣 **crie uma venv**
+
+> 📣 **crie uma venv**
 
 <br/>
 
 ```cmd
 .\env\bin\activate
 ```
->📣 **ative sua venv**
+
+> 📣 **ative sua venv**
 
 <br/>
 
 ```python
 pip install -r requirements.txt
 ```
->📣 **instale as dependencias do projeto**
+
+> 📣 **instale as dependencias do projeto**
 
 <br/>
 
-
 <br/>
-
 
 ## 🐍 uso
 
 apenas **1** passo para começar a usar:
 
 1️⃣ run
+
 ```python
 python -m main.py
 ```
 
 ## ❤️ contribuindo
+
 este é um projeto open source, então sinta-se livre para contribuir. como?
+
 - abra uma [issue](https://github.com/Anti-Coding-Coding-Club/template/issues).
 - proponha seus ajustes, sugestões e abra uma pull request com as alterações.
-veja os [contribuidores](https://github.com/Anti-Coding-Coding-Club/template/graphs/contributors)
-para mais informações, leia nosso [código de contribuição](https://github.com/Anti-Coding-Coding-Club/template/blob/master/CONTRIBUTING.md)
+  veja os [contribuidores](https://github.com/Anti-Coding-Coding-Club/template/graphs/contributors)
+  para mais informações, leia nosso [código de contribuição](https://github.com/Anti-Coding-Coding-Club/template/blob/master/CONTRIBUTING.md)
 
 ## 👨🏻‍💻 autor
+
 [Marcelo Machado](http://www.twitter.com/shinilol1)
 
 ## 👮🏻 licença
+
 ```
 MIT License
 

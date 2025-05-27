@@ -1,115 +1,60 @@
-![](assets/header.jpg)
+# Publish your Obsidian Notes
 
-<p align="center">
-  <img src="https://shields.io/badge/python-3.11.2-3776AB?logo=python&style=flat">
-  <img src="https://shields.io/badge/django-4.1.7-092E20?logo=django&style=flat">
-  <img src="https://shields.io/badge/flask-2.2.3-000000?logo=flask&style=flat">
-  <img src="https://shields.io/badge/fastapi-0.95.0-009688?logo=fastapi&style=flat">
-</p>
+MkDocs template [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
+Would you like to take _some_ of your notes in [Obsidian](https://obsidian.md/) and make it public?
 
-<p align="center">
-    <a href="#-features">features</a>
-  • <a href="#-installation">installation</a>
-  • <a href="#-usage">usage</a>
-  • <a href="#️-contributing">contributing</a>
-</p>
+This template gives you an easy (and automated) way to publish your Obsidian notes (or blog!) on your Github pages.
 
-**🌎 README is available in other languages:  [🇧🇷](translations/README_pt-br.md)**
+With this template, you get these **out-of-the-box**:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
+![](2021-11-22-22-49-26.png)
+- get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
+- Toggle between light and dark mode
+- Blog folder
 
-##
-- [🌟 features](#-features)
-- [📲 installation](#-installation)
-- [🐍 usage](#-usage)
-- [❤️ contributing](#️-contributing)
-- [👨🏻‍💻 author](#-author)
-- [👮🏻 license](#-license)
+## Quick start
 
+1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate). 
 
+![](2021-11-22-22-54-02.png)
 
-## 🌟 features
+2.  **Give a name** to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
+     - Copy only the `main` branch while creating the repo from the template
+3. **Clone** the repository you generated **into your Obsidian folder/vault.**
+4. **Move your notes** that you would like to make public to the `repo-name/docs` folder.
+    - Easiest way to do this would be using drag and drop within Obsidian
+5. Commit and **push** the changes. Github actions will take care of the rest, publishing your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/). 
+6. Go to `Settings > Pages` and select the select the **Source** as your `gh-pages` branch.
 
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
-* Lorem Ipsum
+![](2021-11-22-22-52-49.png)
 
+**Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
 
-## 📲 installation
+## Configuring your website
 
-```cmd
-git clone https://github.com/Anti-Coding-Coding-Club/template.git
-```
->📣 **clone the repo**
+### How do I arrange notes as sections and pages?
 
-<br/>
+By default, the sections and pages will follow the folder structure within `/docs`. The folders and sub-folders will show up as sections. Try not to have white spaces in your folder and file names, as these will be converted to HTML links. The webpage heading will be the same as the first-level heading in the markdown note.
 
-```cmd
-python -m venv env
-```
->📣 **create a venv**
+- If you would like to arrange the pages manually, then use the `nav` option in the `mkdocs.yml` [configuration file](https://www.mkdocs.org/#adding-pages) at the root of this repo  to set custom page navigation.
+    - For example, see the setup for [the Blue Book](https://lyz-code.github.io/blue-book/) at [github](https://github.com/lyz-code/blue-book/blob/master/mkdocs.yml). Managing each page using `nav` can become cumbersome as the number of notes increase though!
+- The Materials theme provides multiple options to arrange [sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections), use [navigation tabs](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs), and many other helpful [navigation setups](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/)
 
-<br/>
+## Alternatives
 
-```cmd
-.\env\bin\activate
-```
->📣 **activate the venv**
+- [binyamin/eleventy-garden: :seedling: A starter site for building a mind garden with eleventy](https://github.com/binyamin/eleventy-garden)
+- [datopian/obsidian-flowershow](https://github.com/datopian/obsidian-flowershow): plugin for publishing with flowershow direct from your obsidian vault.
+- [kmaasrud/oboe](https://github.com/kmaasrud/oboe): tool to convert an Obsidian vault into a static directory of HTML files.
+- [Jackiexiao/foam-mkdocs-template](https://github.com/Jackiexiao/foam-mkdocs-template): template for Obsidian/Foam using mkdocs/mkdocs-material/mkdocs-roamlinks-plugin
+- [foambubble/foam-template](https://github.com/foambubble/foam-template): Foam workpace template
+- [ObsidianPublisher/obsidian-mkdocs-publisher-template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template): Obsidian Mkdocs Publisher, a free obsidian publish alternative throught Mkdocs
+- [KosmosisDire/obsidian-webpage-export](https://github.com/KosmosisDire/obsidian-webpage-export): Webpage HTML Export lets you export single files or whole vaults as HTML websites or documents. It is similar to publish, but you get direct access to the exported HTML.
+- [Enveloppe/obsidian-enveloppe: publish your notes on a GitHub repository from Obsidian Vault](https://github.com/Enveloppe/obsidian-enveloppe)
 
-<br/>
+## Other interesting projects
 
-```python
-pip install -r requirements.txt
-```
->📣 **install project dependencies**
+- [mathieudutour/gatsby-digital-garden: digital garden with Gatsby](https://github.com/mathieudutour/gatsby-digital-garden)
+- [TuanManhCao/digital-garden: Free Obisidian Publish alternative](https://github.com/TuanManhCao/digital-garden)
 
-<br/>
-
-## 🐍 usage
-
-only **1** steps needed to use:
-
-1️⃣ run
-```python
-python -m main.py
-```
-
-## ❤️ contributing
-this is an open source project, so feel free to contribute. how?
-- open an [issue](https://github.com/Anti-Coding-Coding-Club/template/issues).
-- propose your own fixes, suggestions and open a pull request with the changes.
-see [all contributors](https://github.com/Anti-Coding-Coding-Club/template/graphs/contributors)
-for more information, please read the [contributing guidelines](https://github.com/Anti-Coding-Coding-Club/template/blob/master/CONTRIBUTING.md).
-
-## 👨🏻‍💻 author
-[Marcelo Machado](http://www.twitter.com/shinilol1)
-
-## 👮🏻 license
-```
-MIT License
-
-Copyright (c) 2023 Anti Coding Coding Club
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-```
