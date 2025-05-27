@@ -1,3 +1,12 @@
+---
+hide:
+- footer
+draft: true
+date: 2025-05-23
+slug: teste-latex
+categories:
+  - LaTeX
+---
 # LaTeX Math Support
 
 LaTeX math is supported using MathJax.

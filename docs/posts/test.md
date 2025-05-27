@@ -3,11 +3,12 @@ hide:
 - footer
 authors:
 - marques
+readtime: 15
 draft: true
 date: 2025-05-27
-slug: hello-world
+slug: test
 categories:
-  - Hello
+- Hello
 ---
 
-# Hello World Blogpost
+# Hello World

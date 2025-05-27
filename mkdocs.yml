@@ -1,29 +1,49 @@
 site_name: Vaults of Parnassus
+repo_url: https://github.com/mmaachado/vaults-of-parnassus
+repo_name: mmaachado/vaults-of-parnassus
+edit_uri: edit/master/docs/
 
 theme:
   name: "material"
+  favicon: false
+  font:
+    text: Roboto
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/snake
+  language: pt-BR
   features:
     - navigation.indexes
+    - header.autohide
+    - navigation.footer
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
-      accent: indigo
+      primary: purple
+      accent: deep purple
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Switch to dark mode
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: pink
-      accent: blue
+      primary: deep purple
+      accent: purple
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
         name: Switch to light mode
 nav:
   - Home: index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mmaachado
+  generator: false
+
+copyright: Copyright &copy; 2025 Marcelo Machado
 
 # Extensions
 markdown_extensions:
@@ -47,17 +67,28 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+            # - toc:
+            #     permalink: true
 
-  - toc:
-      permalink: true
 
 plugins:
   - search
   - roamlinks
   - blog:
+      draft: true
+      draft_if_future_date: true
       blog_dir: .
+      blog_toc: false
+      archive: false
+      categories: false
+      post_date_format: long
+      post_readtime: true
+      pagination: true
+      pagination_per_page: 5
+      pagination_url_format: "/{page}"
+
   - rss:
-      match_path: blog/posts/.*
+      match_path: posts/.*
       date_from_meta:
         as_creation: date
       categories:
